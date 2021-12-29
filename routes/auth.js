@@ -8,7 +8,7 @@ router.get('/google', passport.authenticate('google', { scope: ['profile'] }));
 router.get('/google/callback',
   passport.authenticate('google', { failureRedirect: '/login' }),
   (req, res) => {
-    res.redirect('/');
+    res.redirect('/Home');
   });
 
 //facebook auth route
@@ -16,7 +16,7 @@ router.get('/facebook', passport.authenticate('facebook', { scope: ['public_prof
 router.get('/facebook/callback',
   passport.authenticate('facebook', { failureRedirect: '/login' }),
   (req, res) => {
-    res.redirect('/dashboard');
+    res.redirect('/Home');
   });
 
 //twitter auth route

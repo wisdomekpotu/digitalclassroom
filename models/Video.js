@@ -11,13 +11,29 @@ const VideoSchema = new mongoose.Schema({
     $type: String,
   },
 
-  thumbnail: {
+  Lecture_Month: {
     $type: String,
   },
 
-  video: {
-    $type: String
+  Lecture_Day: {
+    $type: String,
   },
+
+  Lecture_Category: {
+    $type: String,
+    default: 'public',
+    enum: ['public', 'private'],
+  },
+
+
+
+  // thumbnail: {
+  //   $type: String,
+  // },
+
+  // video: {
+  //   $type: String
+  // },
 
   status: {
     $type: String,

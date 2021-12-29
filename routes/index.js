@@ -17,6 +17,7 @@ router.get("/lecturers", (req, res) => {
 
 });
 
+
 //show all stories
 router.get('/home', async (req, res) => {
   try {

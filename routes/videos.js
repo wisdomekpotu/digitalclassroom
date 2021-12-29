@@ -14,6 +14,7 @@ router.get('/add', alreadyin, (req, res) => {
   })
 });
 
+
 // router.get('/lecture/:id', alreadyin, (req, res) => {
 //   res.render('lectureinfo', {
 //   })
@@ -106,10 +107,6 @@ router.delete('/:id', alreadyin, async (req, res) => {
   }
 
 });
-
-
-
-
 
 
 
