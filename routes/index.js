@@ -12,6 +12,10 @@ router.get('/', (req, res) => {
   })
 });
 
+router.get("/lecturers", (req, res) => {
+  res.render('lecturers.hbs')
+
+});
 
 //show all stories
 router.get('/home', async (req, res) => {
