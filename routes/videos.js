@@ -20,44 +20,70 @@ router.get('/add', alreadyin, (req, res) => {
 //   })
 // });
 
-const storage = multer.diskStorage({
-  destination: (req, file, cb) => {
-    if (file.mimetype === 'image/jpeg') {
-      cb(null, 'thumbnails')
-    } else if (file.mimetype === 'video/mp4') {
-      cb(null, 'videos')
-    } else {
-      console.log(file.mimetype)
-      cb({ error: 'Mime type not supported' })
-    }
-  },
+// const storage = multer.diskStorage({
+//   destination: (req, file, cb) => {
+//     if (file.mimetype === 'image/jpeg') {
+//       cb(null, 'thumbnails')
+//     } else if (file.mimetype === 'video/mp4') {
+//       cb(null, 'videos')
+//     } else {
+//       console.log(file.mimetype)
+//       cb({ error: 'Mime type not supported' })
+//     }
+//   },
 
-  filename: (req, file, cd) => {
-    cd(null, new Date().toISOString().replace(/:/g, '-') + file.originalname);
-  }
-});
+//   filename: (req, file, cd) => {
+//     cd(null, new Date().toISOString().replace(/:/g, '-') + file.originalname);
+//   }
+// });
 
 
-const upload = multer({ storage: storage });
-//process the add form      \      /videos
-router.post('/', alreadyin, upload.fields([{ name: 'video', maxCount: 1 }, { name: 'thumbnail', maxCount: 1 }]), async (req, res, next) => {
+// const upload = multer({ storage: storage });
+// //process the add form      \      /videos
+// router.post('/', alreadyin, upload.fields([{ name: 'video', maxCount: 1 }, { name: 'thumbnail', maxCount: 1 }]), async (req, res, next) => {
+//   try {
+//     req.body.user = req.user.id;
+
+//     const title = req.body.title;
+//     const description = req.body.description;
+//     const status = req.body.status;
+//     const thumbnail = req.files.thumbnail[0].path;
+//     const video = req.files.video[0].path;
+//     const user = req.user.id
+
+//     await Video.create([{ title, description, status, thumbnail, video, user }])
+//     res.redirect('/dashboard')
+//   } catch (err) {
+//     console.log(err)
+//     res.render('error/500')
+//   }
+// });
+
+router.post('/', alreadyin, async (req, res, next) => {
   try {
     req.body.user = req.user.id;
-
     const title = req.body.title;
     const description = req.body.description;
-    const status = req.body.status;
-    const thumbnail = req.files.thumbnail[0].path;
-    const video = req.files.video[0].path;
+    const preview = req.body.preview;
+    const lecture_category = req.body.lecture_category;
+    const lecture_month = req.body.lecture_month;
+    const lecture_day = req.body.lecture_day;
+    const lecturer_role = req.body.lecturer_role;
+
+
     const user = req.user.id
 
-    await Video.create([{ title, description, status, thumbnail, video, user }])
+    await Video.create([{ title, description, preview, lecture_category, lecture_day, lecture_category, lecture_month, lecturer_role, user }])
     res.redirect('/dashboard')
   } catch (err) {
     console.log(err)
     res.render('error/500')
   }
 });
+
+
+
+
 
 
 //show single stories

@@ -7,25 +7,38 @@ const VideoSchema = new mongoose.Schema({
     $type: String,
   },
 
+  preview: {
+    $type: String,
+  },
+
+  lecturer_role: {
+    $type: String,
+  },
+
   description: {
     $type: String,
   },
 
-  Lecture_Month: {
+  lecture_month: {
     $type: String,
   },
 
-  Lecture_Day: {
+  lecture_day: {
     $type: String,
   },
 
-  Lecture_Category: {
+  lecture_category: {
     $type: String,
-    default: 'public',
-    enum: ['public', 'private'],
+    default: 'Computer Engineering',
+    enum: [
+      "Sciences",
+      "Mathematics",
+      "Architecture",
+      "Banking and Finance",
+      "Chemical Engineering",
+      "Computer Engineering",
+    ],
   },
-
-
 
   // thumbnail: {
   //   $type: String,
@@ -35,11 +48,11 @@ const VideoSchema = new mongoose.Schema({
   //   $type: String
   // },
 
-  status: {
-    $type: String,
-    default: 'public',
-    enum: ['public', 'private'],
-  },
+  // status: {
+  //   $type: String,
+  //   default: 'public',
+  //   enum: ['public', 'private'],
+  // },
 
   user: {
     $type: mongoose.ObjectId,

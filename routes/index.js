@@ -21,7 +21,7 @@ router.get("/lecturers", (req, res) => {
 //show all stories
 router.get('/home', async (req, res) => {
   try {
-    const videos = await Video.find({ status: 'public' })
+    const videos = await Video.find({})
       .sort({ createdAt: 'desc' })
       .lean()
     res.render('show1', {
