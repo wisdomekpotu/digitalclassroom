@@ -13,9 +13,6 @@ router.get('/', (req, res) => {
 });
 
 
-
-
-
 //show all stories
 router.get('/home', async (req, res) => {
   try {
@@ -56,8 +53,6 @@ router.post('/login', passport.authenticate('local-login', {
   failureRedirect: '/login', // redirect back to the signup page if there is an error
   failureFlash: true // allow flash messages
 }));
-
-
 
 
 //GET the dashboard

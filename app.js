@@ -23,7 +23,7 @@ dotenv.config({ path: './config/config.env' })
 //passport files
 require('./passportjs/passport-google')(passport)
 require('./passportjs/passport-facebook')(passport)
-require('./passportjs/passport-twitter')(passport)
+// require('./passportjs/passport-twitter')(passport)
 require('./passportjs/passport-local')(passport)
 require('./passportjs/passport-github')(passport)
 
