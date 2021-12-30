@@ -67,28 +67,28 @@
 
     <div class="flex">
       <div class="pt-1 mr-6 text-center">
-        <div class="px-2 pb-1 mb-1 border-b border-gray-400">
-          <p class="text-sm text-blue-gray-700"></p>
+        <div class="px-0 border-b border-gray-400">
+          <p class="text-lg text-gray-600">{{lecture_day}}</p>
         </div>
-        <div class="px-2"><p class="text-lg font-bold">{{lecture_category}}</p></div>
+        <div class="px-2"><p class="text-lg text-gray-600 font-bold">{{lecture_month}}</p></div>
       </div>
       <div>
         <div class="mb-2">
-          <a href="/videos/{{_id}}" class="text-xs font-semibold tracking-wide uppercase transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800" aria-label="Category" title="Delevopment">{{title}}</a>
+          <a href="/videos/{{_id}}" class="text-xs font-semibold tracking-wide uppercase transition-colors duration-200 text-gray-600 hover:text-deep-purple-800" aria-label="Category" title="Delevopment">{{lecture_category}}</a>
         </div>
         <div class="mb-2">
-          <a href="/" aria-label="Article" class="inline-block text-2xl font-bold leading-5 text-black transition-colors duration-200 hover:text-deep-purple-accent-400">{{title}}</a>
+          <a href="/" aria-label="Article" class="inline-block text-2xl font-bold leading-5  transition-colors duration-200 hover:text-deep-purple-accent-400">{{title}}</a> 
         </div>
-        <p class="mb-5 text-gray-700">
+        <p class="text-black">
           Sed ut perspiciatis unde omnis iste natus error sit sed quia consequuntur magni voluptatem doloremque.
         </p>
         <div class="flex items-center">
           <a href="/" aria-label="Author" title="Author" class="mr-3">
-            <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="avatar" class="object-cover w-10 h-10 rounded-full shadow-sm" />
+            <img src={{image}} alt="avatar" class="object-cover w-10 h-10 rounded-full shadow-sm" />
           </a>
           <div>
-            <a href="/" aria-label="Author" title="Author" class="font-semibold text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-400">Petru Vîrtos</a>
-            <p class="text-sm font-medium leading-4 text-gray-600">Author</p>
+            <a href="/" aria-label="Author" title="Author" class="font-semibold text-gray-600 transition-colors duration-200 hover:text-deep-purple-accent-400">wisdom</a>
+            <p class="text-sm font-medium leading-4 text-gray-600">{{lecturer_role}}</p>
           </div>
         </div>
       </div>
