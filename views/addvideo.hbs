@@ -34,18 +34,27 @@
 <option value="Architecture">Architecture</option>
 <option value="Chemical Engineering">Chemical Engineering</option>
 <option value="Computer Engineering" selected>Computer Engineering</option>
-      
+</select>
 
 <label for="textarea">Lecture Description</label>
 <textarea id="textarea" name="description" class="form-control mb-4" placeholder="Textarea"></textarea>
 
 
+<label for="textarea">Meeting Link</label>
+<textarea id="textarea" name="lecture_url" class="form-control mb-4" placeholder="Textarea"></textarea>
+
+
 <label for="textarea">Lecture Preview</label>
-<textarea id="textarea" name="preview" class="form-control mb-4" placeholder="Textarea"></textarea>
+<textarea id="textarea" name="preview" class="form-control mb-4" placeholder="Textarea" maxlength="130"></textarea>
 
-
-<label for="textarea">lecturer role</label>
-<textarea id="textarea" name="lecturer_role" class="form-control mb-4" placeholder="Textarea"></textarea>
+<label for="select">Lecture role</label>
+<select class="browser-default custom-select mb-4" id="status" name="lecturer_role">
+<option value="Teaching Assistant">Teaching Assistant</option>
+<option value="Junior Lecturer">Junior Lecturer</option>
+<option value="Head of Department">Head of Department</option>
+<option value="Faculty Officer">Faculty Officer</option>
+<option value="Senior Lecturer" selected>Senior Lecturer</option>
+</select>
 
 <label for="textarea">lecturer day</label>
 <textarea id="textarea" name="lecture_day" class="form-control mb-4" placeholder="Textarea"></textarea>

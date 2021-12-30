@@ -13,6 +13,18 @@ const VideoSchema = new mongoose.Schema({
 
   lecturer_role: {
     $type: String,
+    default: 'Senior Lecturer',
+    enum: [
+      'Senior Lecturer',
+      "Teaching Assistant",
+      "Junior Lecturer",
+      "Head of Department",
+      "Faculty Officer",
+    ],
+  },
+
+  lecturer_url: {
+    $type: String,
   },
 
   description: {

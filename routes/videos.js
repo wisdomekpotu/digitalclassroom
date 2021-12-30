@@ -67,6 +67,7 @@ router.post('/', alreadyin, async (req, res) => {
 
     const preview = req.body.preview;
     const lecturer_role = req.body.lecturer_role;
+    const lecturer_url = req.body.lecturer_url;
     const description = req.body.description;
     const lecture_month = req.body.lecture_month;
     const lecture_day = req.body.lecture_day;
@@ -77,7 +78,7 @@ router.post('/', alreadyin, async (req, res) => {
 
     const user = req.user.id
 
-    await Video.create([{ title, preview, lecturer_role, description, lecture_month, lecture_day, lecture_category, user }])
+    await Video.create([{ title, preview, lecturer_role, lecturer_url, description, lecture_month, lecture_day, lecture_category, user }])
     res.redirect('/dashboard')
   } catch (err) {
     console.log(err)
