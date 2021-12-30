@@ -22,7 +22,7 @@ router.get('/home', async (req, res) => {
     const videos = await Video.find({})
       .sort({ createdAt: 'desc' })
       .lean()
-    res.render('show1', {
+    res.render('home', {
 
       videos,//this is me passing the data to the view
     })
