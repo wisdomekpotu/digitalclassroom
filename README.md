@@ -1,9 +1,6 @@
-<a href=""><p align="center">
-<img height=100 src="#"/>
 
-</p></a>
 <p align="center">
-  <strong> Digital Classroom🚀</strong>
+  <strong> </strong>
 </p>
 
 <h3 align="center">
