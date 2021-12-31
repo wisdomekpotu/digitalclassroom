@@ -35,7 +35,7 @@ Technologies Used:
 - **MongoDB** as our database of choice
 - **Nodejs** and **Expressjs** as our server language and server framework
 - **Mongoose** for creating Database schema and model
-- **HTML**, **CSS**, and **Javascript** with [ MDBootstrap] for our website's frontend
+- **HTML**, **CSS**, and **Javascript** with for our website's frontend
 - **Handlebars(.hbs)** as our Template Engine
 - **Hosting**: Heroku
 
