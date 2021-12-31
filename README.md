@@ -1,7 +1,7 @@
 
-<p align="center">
-  <strong> </strong>
-</p>
+<h1 align="center">
+  <strong>Digital Classroom </strong>
+</h1>
 
 <h3 align="center">
   <a href="https://github.com/wisdomekpotu/digitalclassroom/blob/main/CONTRIBUTING.md">Contribute</a>
