@@ -25,11 +25,11 @@
 
 Functionalities:
 
-- User Signup.
-- User Login.
-- Upload Lecture Video.
-- Delete Lecture Video.
-- Upload Lecture Thumbnail (image).
+- Tutor Signup.
+- Tutor Login.
+- Upload Lecture.
+- Delete Lecture.
+
 
 ### Tech Stack
 
