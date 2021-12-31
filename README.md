@@ -3,7 +3,7 @@
 
 </p></a>
 <p align="center">
-  <strong> 🚀</strong>
+  <strong> Digital Classroom🚀</strong>
 </p>
 
 <h3 align="center">
