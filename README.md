@@ -40,15 +40,6 @@ Technologies Used:
 - **Mongoose** for creating Database schema and model
 - **HTML**, **CSS**, and **Javascript** with [ MDBootstrap] for our website's frontend
 - **Handlebars(.hbs)** as our Template Engine
-
-## Technology Stack:
-
-- **Frontend**: Handlebars Template
-- **Backend**: Nodejs, Expressjs Framework
-- **IDE**: VS Code
-- **API Testing & Documentation**: Postman
-- **Version Control**: Git and GitHub
-- **Database**: mongoDB
 - **Hosting**: Heroku
 
 ### Setup
